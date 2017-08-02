@@ -182,17 +182,38 @@
 
 # de
 
-def count():
-    def f(j):
-        def g():
-            return j *j
-        return g
-    fs = []
-    for i in range(1,4):
-        fs.append(f(i))
-    return fs    
+# def count():
+#     def f(j):
+#         def g():
+#             return j *j
+#         return g
+#     fs = []
+#     for i in range(1,4):
+#         fs.append(f(i))
+#     return fs    
 
-f1,f2,f3 = count();
-print(f1())
-print(f2())
-print(f3())
+# f1,f2,f3 = count();
+# print(f1())
+# print(f2())
+# print(f3())
+# import functools
+# def log(func):
+#     @functools.wraps(func)
+#     def wrapper(*args, **kw):
+#         print('call %s():' %func.__name__)
+#         return func(*args, **kw)
+#     return wrapper
+
+# def log(text):
+#     def decorator(func):
+
+# @log
+# def now():
+#     print('2017-7-18');
+
+
+# now()
+# 偏函数 固定住某个值
+# int2 = functools.partial(int,base=2)
+# m = int2('10000')
+# print(m)
