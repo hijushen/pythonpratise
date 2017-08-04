@@ -72,6 +72,6 @@ s.name = 'zs'
 s.age = '14'
 print(s.name + ' ' + s.age)
 
-#使用__slotes__限定了对象类型
+# 使用__slotes__限定了对象类型
 # s.addr = 'unknown1'
-#print(s.name + ' ' + s.age + ',.:' + s.addr)
+# print(s.name + ' ' + s.age + ',.:' + s.addr)
