@@ -63,14 +63,14 @@ _author_ = 'test ge'
 # print("%.2f" % 1.755)
 # print("%.3f" % 1.7555)
 
-class Student(object):
-    __slots__ = ('name', 'age')
+# class Student(object):
+#     __slots__ = ('name', 'age')
 
 
-s = Student()
-s.name = 'zs'
-s.age = '14'
-print(s.name + ' ' + s.age)
+# s = Student()
+# s.name = 'zs'
+# s.age = '14'
+# print(s.name + ' ' + s.age)
 
 
 # 使用__slotes__限定了对象类型
@@ -79,3 +79,16 @@ print(s.name + ' ' + s.age)
 
 # test224
 # test2234
+余额宝 = 16454.95
+l余额宝 = 4.0240
+网商银行 = 1150
+l网商银行= 3.8
+京东金融 = 5057.51
+l京东金融 = 4.5106
+微信理财通 = 2280.41
+l微信理财通 = 4.2410
+qq理财通 = 4122.20
+lqq理财通 = 4.09
+
+sum = 余额宝 +网商银行 +京东金融+微信理财通+qq理财通
+print(sum)
