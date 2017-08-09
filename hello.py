@@ -1,18 +1,35 @@
 #!/usr/bin/env/ python3
 # -*- coding:utf-8 -*-
-from enum import Enum
-'a test module'
-
-_author_ = 'test ge'
 
 
-Month = Enum('Month', (
-    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-    ))
+# 余额宝 = 23742.70
+# # l余额宝 = 4.0240
+# 网商银行 = 1150
+# # l网商银行= 3.8
+# 京东金融 = 5057.51
+# # l京东金融 = 4.5106
+# 微信理财通 = 2280.41
+# # l微信理财通 = 4.2410
+# qq理财通 = 4122.20
+# # lqq理财通 = 4.09
 
-for name, member in Month.__members__.items():
-    print(name, '==>', member, ',', member.value)
+# sum = 余额宝 +网商银行 +京东金融+微信理财通+qq理财通
+# print(sum)
+
+
+# from enum import Enum
+# 'a test module'
+
+# _author_ = 'test ge'
+
+
+# Month = Enum('Month', (
+#     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+#     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+#     ))
+
+# for name, member in Month.__members__.items():
+#     print(name, '==>', member, ',', member.value)
 # class Student(object):
 #     def __init__(self, name):
 #         self.name = name
@@ -182,15 +199,12 @@ for name, member in Month.__members__.items():
 
 # class Student(object):
 #     __slots__ = ('name', 'age')
-<<<<<<< HEAD
-=======
 
 
 # s = Student()
 # s.name = 'zs'
 # s.age = '14'
 # print(s.name + ' ' + s.age)
->>>>>>> d83854c82dfd1f28d1a5ec779668a06dd0dbdc18
 
 
 # s = Student()
@@ -203,7 +217,6 @@ for name, member in Month.__members__.items():
 
 # test224
 # test2234
-<<<<<<< HEAD
 # class Screen(object):
 #     @property
 #     def width(self):
@@ -231,18 +244,3 @@ for name, member in Month.__members__.items():
 # s.height = 768
 # print(s.resolution)
 # # assert s.resolution == 786432, '1024 * 768 = %d ?' % s.resolution
-=======
-余额宝 = 16454.95
-l余额宝 = 4.0240
-网商银行 = 1150
-l网商银行= 3.8
-京东金融 = 5057.51
-l京东金融 = 4.5106
-微信理财通 = 2280.41
-l微信理财通 = 4.2410
-qq理财通 = 4122.20
-lqq理财通 = 4.09
-
-sum = 余额宝 +网商银行 +京东金融+微信理财通+qq理财通
-print(sum)
->>>>>>> d83854c82dfd1f28d1a5ec779668a06dd0dbdc18
