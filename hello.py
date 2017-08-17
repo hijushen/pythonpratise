@@ -2,19 +2,63 @@
 # -*- coding:utf-8 -*-
 
 
-# 余额宝 = 23742.70
-# # l余额宝 = 4.0240
-# 网商银行 = 1150
-# # l网商银行= 3.8
-# 京东金融 = 5057.51
-# # l京东金融 = 4.5106
-# 微信理财通 = 2280.41
-# # l微信理财通 = 4.2410
-# qq理财通 = 4122.20
-# # lqq理财通 = 4.09
+import json
+json_str = '{"age":20 ,"score":88, "name":"Bob"}'
+d = json.loads(json_str)
+print(d)
+print(d.key)
 
-# sum = 余额宝 +网商银行 +京东金融+微信理财通+qq理财通
-# print(sum)
+# d = dict(name='Bob', age=20, score=99)
+# f = [1, 23, 213]
+# print(json.dumps(f))
+# print(json.dumps(d))
+
+# class FooError(ValueError):
+#     pass
+
+
+# def foo(s):
+#     n = int(s)
+#     if n == 0:
+#         raise FooError('invalid value: %s' % s)
+#     return 10/n
+
+
+# foo('0')
+# import logging
+
+
+# def foo(s):
+#     return 10/int(s)
+
+
+# def bar(s):
+#     return foo(s) * 2
+
+
+# def main():
+#     try:
+#         bar('0')
+#     except Exception as e:
+#         logging.exception(e)
+
+
+# main()
+# print('END')
+
+# try:
+#     print('try')
+#     r = 10/2
+#     print('result: ', r)
+# except ZeroDivisionError as e:
+#     print('finally', e)
+# finally:
+#     print('finally...')
+# print('END')
+
+
+# 定制方法
+# https://docs.python.org/3/reference/datamodel.html#special-method-names
 
 
 # from enum import Enum
