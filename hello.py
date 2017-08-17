@@ -120,7 +120,7 @@ print(d.key)
 # class Fib(object):
 #     def __init__(self):
 #         self.a, self.b = 0, 1  # 初始化开始
-    
+#    
 #     def __iter__(self):  # 返回自身数据
 #         return self
     
@@ -165,8 +165,7 @@ print(d.key)
 # #隔壁老王
 # class LaoWang():
 #     def func(self):
-#         print('老王打儿子')
-        
+#         print('老王打儿子')        
         
 # #继父
 # class StepFather():
