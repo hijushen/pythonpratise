@@ -1,12 +1,85 @@
 #!/usr/bin/env/ python3
 # -*- coding:utf-8 -*-
+# from random import randrange
+# from bisect import bisect, bisect_left, bisect_right
+from functools import wraps
 
 
-import json
-json_str = '{"age":20 ,"score":88, "name":"Bob"}'
-d = json.loads(json_str)
-print(d)
-print(d.key)
+def memo(func):
+    cache = {}
+
+    @wraps(func)
+    def wrap(*args):
+        if args not in cache:
+            cache[args] = func(*args)
+        return cache[args]
+    return wrap
+
+
+@memo
+def fib(i):
+    if i < 2:
+        return 1
+    return fib(i - 1) + fib(i - 2)
+
+
+print(fib(100))
+# a = [0, 2, 3, 5, 6, 7, 8, 8, 9]
+# print(bisect(a, 5))  # 4
+# print(bisect_left(a, 5))
+# print(bisect_right(a, 5))
+
+# def ins_sort_rec(seq, i):
+#     if i == 0:
+#         return
+#     ins_sort_rec(seq, i - 1)
+#     j = i  # 更规范点， 不替换也可以啊.
+#     while j > 0 and seq[j - 1] > seq[j]:
+#         seq[j - 1], seq[j] = seq[j], seq[j - 1]
+#         j -= 1  # Decrement j 
+
+
+# def ins_sort(seq):
+#     for i in range(1, len(seq)):
+#         j = i  # i还有用,. 用j作为walk man
+#         while j > 0 and seq[j - 1] > seq[j]:
+#             seq[j - 1], seq[j] = seq[j], seq[j - 1]
+#             j -= 1
+
+
+# def sel_sort_rec(seq, i):
+#     if i == 0:
+#         return
+#     max_j = i
+#     for j in range(i):
+#         if seq[j] > seq[max_j]:
+#             max_j = j
+#     seq[i], seq[max_j] = seq[max_j], seq[i]
+#     sel_sort_rec(seq, i - 1)
+
+
+# def sel_sort(seq):
+#     for i in range(len(seq) - 1, 0, -1):
+#         max_j = i
+#         for j in range(i):
+#             if seq[j] > seq[max_j]:
+#                 max_j = j
+#         seq[i], seq[max_j] = seq[max_j], seq[i]
+
+
+# seq = [randrange(1000) for i in range(100)]
+# # ins_sort_rec(seq, len(seq) - 1)
+# # ins_sort(seq)
+# # sel_sort(seq)
+# sel_sort_rec(seq, len(seq) - 1)
+# print(seq)
+
+
+# import json
+# json_str = '{"age":20 ,"score":88, "name":"Bob"}'
+# d = json.loads(json_str)
+# print(d)
+# print(d.key)
 
 # d = dict(name='Bob', age=20, score=99)
 # f = [1, 23, 213]
